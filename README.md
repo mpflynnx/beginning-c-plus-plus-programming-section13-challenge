@@ -8,7 +8,7 @@ The program must support the following:
 
 class Movie - models a movie which includes
 - movie name
-- movie rating (G, PG, PG-13, R)
+- age rating (U, PG, 12, 12A, 15, 18)
 - watched - the number of times the movie has been watched
 
 class Movies - models a collection of movie objects
@@ -50,3 +50,6 @@ Here is a sample main and the output. Make sure you understand the program flow 
 you start coding!
 
 Good luck and have fun!
+
+### External References
+- [BBFC age rating ](https://www.bbfc.co.uk/about-classification)
