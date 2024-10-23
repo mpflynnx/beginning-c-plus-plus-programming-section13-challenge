@@ -41,3 +41,13 @@ void Movies::increment_watch_count(const Movie& movie)
         std::cout << "Movie " << movie.m_name << " watch count: " << iter->m_watch_count << std::endl;
     }
 }
+
+void Movies::print_movies() const
+    {
+        std::cout << "************************\n";
+        std::cout << "Name       " << "Age rating       " << "Watch count     " << std::endl;
+        for (const auto& movie : m_movies)
+        {
+            movie.print();
+        }
+    }
