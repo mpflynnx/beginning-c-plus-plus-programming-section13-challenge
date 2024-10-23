@@ -15,7 +15,7 @@ protected:
 public:
 
     std::string m_name; // for use with Movies
-    int m_watch_count; 
+    int m_watch_count; // for use with Movies
 
     void set_name(std::string name)
     {

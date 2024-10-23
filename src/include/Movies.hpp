@@ -20,7 +20,7 @@ public:
 
     void increment_watch_count(const Movie& movie);
 
-    // void print() const;
+    void print_movies() const;
 
 };
 
