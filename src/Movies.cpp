@@ -21,3 +21,23 @@ void Movies::add_movie(const Movie& movie)
         std::cout << "Movie " << movie.m_name << " already exists in vector.\n";
     }
 }
+
+void Movies::increment_watch_count(const Movie& movie)
+{
+
+    std::cout << "************************\n";
+    std::cout << "Incrementing " << movie.m_name << " watch count.\n";
+
+    auto iter = std::find_if(m_movies.begin(), m_movies.end(), [&movie](const Movie& existingMovie) {
+        return existingMovie.m_name == movie.m_name;});
+
+    if (iter == m_movies.end())
+    {
+        std::cout << "Movie " << movie.m_name << " does not exist in vector.\n";
+    }
+    else
+    {
+        iter->m_watch_count++;
+        std::cout << "Movie " << movie.m_name << " watch count: " << iter->m_watch_count << std::endl;
+    }
+}

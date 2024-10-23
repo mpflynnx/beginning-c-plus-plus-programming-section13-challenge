@@ -22,7 +22,11 @@ int main ()
 
     Movies my_movies;
     my_movies.add_movie(big);
-    my_movies.add_movie(big); // check for movie exists in vector
+    my_movies.add_movie(big); // test for movie does already exists in vector
+
+    my_movies.increment_watch_count(big);
+    my_movies.increment_watch_count(big3); // test for movie does not exist in vector
+
     // my_movies.add_movie(Movie("Bigger", "PG", 1));
 
     // my_movies.print();  
