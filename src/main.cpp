@@ -6,8 +6,10 @@ int main ()
 {
 
     // Movie big(); // not wanting this type of instantiation
-    // Movie big("Big", "12A", 1);
-    // Movie big2("Big2", "12A", 1);
+    Movie big("Big"); // allowed
+    Movie big2("Big2", "12A"); // allowed
+    Movie big3("Big3", "15", 5); // allowed
+
 
     // big2.set_name("Bigger2");
     // std::cout << big2.get_name() << std::endl;
@@ -19,10 +21,11 @@ int main ()
     // std::cout << mermaid.get_name();
 
     Movies my_movies;
-    my_movies.add_movie(Movie("Big", "12A", 1));
-    my_movies.add_movie(Movie("Bigger", "PG", 1));
+    my_movies.add_movie(big);
+    my_movies.add_movie(big); // check for movie exists in vector
+    // my_movies.add_movie(Movie("Bigger", "PG", 1));
 
-    my_movies.print();  
+    // my_movies.print();  
 
     return 0;
 }

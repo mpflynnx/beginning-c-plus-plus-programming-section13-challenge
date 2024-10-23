@@ -1,7 +1,6 @@
 #include "include/Movie.hpp"
 
 // Constructors
-
 Movie::Movie(std::string name)
     :Movie{name, "Undefined", 0}
 {}
