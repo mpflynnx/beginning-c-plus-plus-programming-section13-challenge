@@ -18,7 +18,7 @@ public:
 
     void add_movie(const Movie& movie);
 
-    // void increment_movie_watch_count(const Movie& movie);
+    void increment_watch_count(const Movie& movie);
 
     // void print() const;
 
