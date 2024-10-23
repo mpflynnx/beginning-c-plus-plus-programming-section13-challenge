@@ -5,16 +5,11 @@
 
 class Movie
 {
-private:
-    std::string m_age_rating; // U, PG, 12, 12A, 15, 18
-
-
-protected:
-
 
 public:
-
+    // made all members public to match constructor initialisation
     std::string m_name; // for use with Movies
+    std::string m_age_rating; // U, PG, 12, 12A, 15, 18
     int m_watch_count; // for use with Movies
 
     void set_name(std::string name)
